@@ -62,25 +62,25 @@ export const Main = () => {
       <PageTitle titleName="메인페이지" />
       <Layout>
         <MenuListWrap>
-          <Link to="/sub">
+          <Link to="/sub" state={{ name: "한식" }}>
             <MenuList>
               <MenuImg className="MenuImg1" />
               <MenuTitle>한식</MenuTitle>
             </MenuList>
           </Link>
-          <Link to="/sub">
+          <Link to="/sub" state={{ name: "일식" }}>
             <MenuList>
               <MenuImg className="MenuImg2" />
               <MenuTitle>일식</MenuTitle>
             </MenuList>
           </Link>
-          <Link to="/sub">
+          <Link to="/sub" state={{ name: "중식" }}>
             <MenuList>
               <MenuImg className="MenuImg3" />
               <MenuTitle>중식</MenuTitle>
             </MenuList>
           </Link>
-          <Link to="/sub">
+          <Link to="/sub" state={{ name: "양식" }}>
             <MenuList>
               <MenuImg className="MenuImg4" />
               <MenuTitle>양식</MenuTitle>
