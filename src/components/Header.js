@@ -6,7 +6,7 @@ const HeadLogo = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: lightgray; //나중에 삭제
+  border-bottom: 2px solid #dbdbdb;
 `;
 
 export const Header = () => {

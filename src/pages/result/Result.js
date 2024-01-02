@@ -52,9 +52,10 @@ const FoodBtn = styled.button`
   cursor: pointer;
   font-size: 30px;
   font-weight: 500;
+  transition: 0.3s;
 
   &:hover {
-    opacity: 0.7;
+    background-color: #b2b2b2;
   }
 `;
 

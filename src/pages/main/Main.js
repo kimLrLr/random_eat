@@ -17,7 +17,6 @@ const MenuList = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* background-color: teal; */
   border: 1px solid #dbdbdb;
   border-radius: 20px;
   box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.06);
