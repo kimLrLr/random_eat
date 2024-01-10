@@ -37,7 +37,8 @@ const MenuTitle = styled.div`
   line-height: 30px;
 
   h3 {
-    font-size: 20px;
+    font-size: 28px;
+    color: #c20000;
   }
 `;
 

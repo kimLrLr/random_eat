@@ -50,7 +50,14 @@ const EatTitle = styled.div`
     text-align: center;
     margin: 10px auto;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 18px;
+  }
+
+  h3 {
+    font-size: 28px;
+    line-height: 50px;
+    color: #c20000;
+    font-weight: 700;
   }
 
   p {
@@ -108,7 +115,9 @@ export const Sub = () => {
           </MenuList>
 
           <EatTitle>
-            <div>오늘은 "{choiceName}"</div>
+            <div>
+              오늘은 <h3>"{choiceName}"</h3>
+            </div>
             <FoodBtn>
               <Link to="/result" state={{ foodList: findChoiceFood }}>
                 먹을래요!
