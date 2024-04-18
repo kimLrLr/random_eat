@@ -29,21 +29,10 @@ const MenuList = styled.div`
 const MenuImg = styled.div`
   width: 100px;
   height: 100px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 
-  &.MenuImg1 {
-    background-image: url("https://cdn.discordapp.com/attachments/1071326637540524122/1191700869146759269/kr_food.png");
-  }
-  &.MenuImg2 {
-    background-image: url("https://cdn.discordapp.com/attachments/1071326637540524122/1191700314252922920/jp_food.png");
-  }
-  &.MenuImg3 {
-    background-image: url("https://cdn.discordapp.com/attachments/1071326637540524122/1191700314642980885/cn_food.png");
-  }
-  &.MenuImg4 {
-    background-image: url("https://cdn.discordapp.com/attachments/1071326637540524122/1191700314437455932/w_food.png");
+  img {
+    display: block;
+    margin: 10px auto;
   }
 `;
 
@@ -63,25 +52,45 @@ export const Main = () => {
         <MenuListWrap>
           <Link to="/sub" state={{ name: "한식" }}>
             <MenuList>
-              <MenuImg className="MenuImg1" />
+              <MenuImg>
+                <img
+                  src={process.env.PUBLIC_URL + "/img/kr_food.png"}
+                  alt="한식 아이콘"
+                />
+              </MenuImg>
               <MenuTitle>한식</MenuTitle>
             </MenuList>
           </Link>
           <Link to="/sub" state={{ name: "일식" }}>
             <MenuList>
-              <MenuImg className="MenuImg2" />
+              <MenuImg>
+                <img
+                  src={process.env.PUBLIC_URL + "/img/jp_food.png"}
+                  alt="일식 아이콘"
+                />
+              </MenuImg>
               <MenuTitle>일식</MenuTitle>
             </MenuList>
           </Link>
           <Link to="/sub" state={{ name: "중식" }}>
             <MenuList>
-              <MenuImg className="MenuImg3" />
+              <MenuImg>
+                <img
+                  src={process.env.PUBLIC_URL + "/img/cn_food.png"}
+                  alt="중식 아이콘"
+                />
+              </MenuImg>
               <MenuTitle>중식</MenuTitle>
             </MenuList>
           </Link>
           <Link to="/sub" state={{ name: "양식" }}>
             <MenuList>
-              <MenuImg className="MenuImg4" />
+              <MenuImg>
+                <img
+                  src={process.env.PUBLIC_URL + "/img/w_food.png"}
+                  alt="양식 아이콘"
+                />
+              </MenuImg>
               <MenuTitle>양식</MenuTitle>
             </MenuList>
           </Link>

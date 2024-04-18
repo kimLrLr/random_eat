@@ -87,7 +87,10 @@ export const Result = () => {
         <MenuListWrap>
           <MenuList>
             <MenuImg>
-              <img src={findFood.img} alt="음식사진" />
+              <img
+                src={process.env.PUBLIC_URL + `/img/${findFood.img}`}
+                alt="음식사진"
+              />
             </MenuImg>
             <MenuTitle>
               <div>

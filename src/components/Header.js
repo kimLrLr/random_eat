@@ -14,7 +14,7 @@ export const Header = () => {
     <>
       <HeadLogo>
         <img
-          src="https://cdn.discordapp.com/attachments/1071326637540524122/1191609151978221599/logo.png"
+          src={process.env.PUBLIC_URL + `/img/logo.png`}
           alt="밥묵다 로고 이미지"
         />
       </HeadLogo>
