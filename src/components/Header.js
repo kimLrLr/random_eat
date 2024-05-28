@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const HeadLogo = styled.div`
@@ -13,10 +14,12 @@ export const Header = () => {
   return (
     <>
       <HeadLogo>
-        <img
-          src={process.env.PUBLIC_URL + `/img/logo.png`}
-          alt="밥묵다 로고 이미지"
-        />
+        <Link to={"/"}>
+          <img
+            src={process.env.PUBLIC_URL + `/img/logo.png`}
+            alt="밥묵다 로고 이미지"
+          />
+        </Link>
       </HeadLogo>
     </>
   );

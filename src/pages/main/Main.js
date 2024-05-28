@@ -4,10 +4,17 @@ import { PageTitle } from "../../components/PageTitle";
 import { Link } from "react-router-dom";
 
 const MenuListWrap = styled.div`
-  width: 70vw;
-  display: flex;
-  justify-content: space-around;
+  width: 85vw;
+  height: 100%;
   align-items: center;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 30px;
+
+  @media screen and (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 `;
 
 const MenuList = styled.div`
@@ -24,12 +31,13 @@ const MenuList = styled.div`
   &:hover {
     opacity: 0.7;
   }
+
+  @media screen and (max-width: 1024px) {
+    height: 20vh;
+  }
 `;
 
 const MenuImg = styled.div`
-  width: 100px;
-  height: 100px;
-
   img {
     display: block;
     margin: 10px auto;
@@ -37,7 +45,6 @@ const MenuImg = styled.div`
 `;
 
 const MenuTitle = styled.div`
-  width: 200px;
   text-align: center;
   margin-top: 25px;
   font-weight: 700;
